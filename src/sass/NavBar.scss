@@ -9,7 +9,10 @@
     .link{
         color: white;
         text-decoration: none;
-        padding: 40px;
+        margin-right:  40px;
         font-size: 20px;
+        &:hover{
+            color: blue;
+        }
     }
 }
