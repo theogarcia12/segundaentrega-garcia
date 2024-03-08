@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-
+import "../../sass/Item.scss"
 const Item = ({id, name, img, category, price}) => {
   return (
     <article>
@@ -7,7 +7,7 @@ const Item = ({id, name, img, category, price}) => {
         <img src={img} style={{width: 100}}/>
         <p>Categoria: {category}</p>
         <h1>${price}</h1>
-        <Link to={`/detail/${id}`}>Ver Detalle</Link>
+        <Link className="link" to={`/detail/${id}`}>Ver Detalle</Link>
     </article>
   )
 }

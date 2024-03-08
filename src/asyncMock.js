@@ -4,7 +4,7 @@ const products = [
         name: "iphone 15",
         price: 800,
         category: "celulares",
-        img: "https://i.pinimg.com/736x/11/2c/93/112c933e00502825649a504ca3ab3947.jpg",
+        img: "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1708673189/Croma%20Assets/Communication/Mobiles/Images/300652_0_ncocr2.png",
         stock: 3,
         description: "Nuevo iphone 15 excelente calidad de materiales",
     },

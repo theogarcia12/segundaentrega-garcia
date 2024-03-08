@@ -1,0 +1,18 @@
+article{
+    border: 2px solid black;
+    right: 80%;
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    .link{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        :hover{
+            color: blue($color: #000000);
+        }
+    }
+}
