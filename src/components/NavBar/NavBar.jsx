@@ -1,14 +1,14 @@
 import CartWidget from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom"
-
+import "../../sass/NavBar.scss"
 const NavBar = () => {
     return (
-        <nav style={{display: "flex", justifyContent: "space-between", alignItems:"center"}}>
-            <h1>ecomerce</h1>
+        <nav className="navbar" style={{display: "flex", justifyContent: "space-between", alignItems:"center"}}>
+            <Link className="link" to={"/"}>ecomerce</Link>
             <section>
-                <Link to={"/category/tablets"}>Tablets </Link>
-                <Link to={"/category/celulares"}>Celulares </Link>
-                <Link to={"/category/computadoras"}>Computadoras </Link>
+                <Link className="link" to={"/category/tablets"}>Tablets </Link>
+                <Link className="link" to={"/category/celulares"}>Celulares </Link>
+                <Link className="link" to={"/category/computadoras"}>Computadoras </Link>
             </section>
             <CartWidget></CartWidget>
         </nav>

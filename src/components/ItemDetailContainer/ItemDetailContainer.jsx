@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { getProductsById } from "../../asyncMock";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
+import "../../sass/ItemDetailContainer.scss"
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null);
@@ -17,7 +18,7 @@ const ItemDetailContainer = () => {
             })
     }, [productId]);
   return (
-    <div>
+    <div className="itemDetailContainer">
         <ItemDetail {...product}/>
     </div>
   )
