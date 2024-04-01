@@ -1,3 +1,18 @@
+h1{
+    text-align: center;    }
 .h1 {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: #fff;
+
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
+        align-items: center;
+        gap: 1.25rem;
+    }
 }

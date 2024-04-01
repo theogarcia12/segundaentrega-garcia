@@ -1,27 +1,20 @@
 import { useState } from "react"
+import "../../sass/ItemCount.scss"
 
-const ItemCount = ({initial=1, stock,}) => {
-
-    const [count, setCount] = useState(initial )
-
-    const increment = () => {
-        if (count < stock){
-            setCount((prev) => prev + 1)
-        } 
-    }
-
-    const decrement = () => {
-        if (count > 1){
-            setCount((prev) => prev - 1)
-        } 
-    }
-
+const ItemCount = ({ stock, handleAgregar, decrement, increment, cantidad}) => {
+    
     return (
-        <div>
-            <h1>{count}</h1>
-            <button onClick={decrement}>-</button>
-            <button onClick={increment}>+</button>
+        <>
+        <div className="counter">
+                <button onClick={decrement}>-</button>
+                <h1>{cantidad}</h1>
+                <button onClick={increment}>+</button>
         </div>
+        <p className="disponibles">Disponibles: {stock}</p>
+        <button className="compra" onClick={() => handleAgregar()}>
+            Agregar al carrito
+        </button>
+    </>
     )
 }
 

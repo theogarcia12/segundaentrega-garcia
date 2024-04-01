@@ -18,10 +18,13 @@ const ItemListContainer = ({greetings}) => {
             })
     }, [categoryId]) 
     return (
-        <div>
-            <h1 className="h1">{greetings}</h1>
-            <ItemList products={products}/>
-        </div>
+        <>
+            <h1 >{greetings}</h1>
+            <div className="h1">
+                
+                <ItemList products={products}/>
+            </div>
+        </>
     )
 }
 

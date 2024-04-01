@@ -2,15 +2,22 @@
 @import url(./sass/itemListContainer.scss);
 @import url(./sass/NavBar.scss);
 @import url(./sass/ItemDetailContainer.scss);
-
+@import url(./sass/ItemCount.scss);
+@import url(./sass/ItemDetail.scss);
 
 body {
-    background-color: gray;
+    background-color: rgb(193, 193, 193);
     color: white;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+
+
     .roboto-black {
         font-family: "Roboto", sans-serif;
         font-weight: 900;

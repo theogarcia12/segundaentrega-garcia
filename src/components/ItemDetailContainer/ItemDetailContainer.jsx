@@ -6,7 +6,8 @@ import "../../sass/ItemDetailContainer.scss"
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null);
-    const {productId} = useParams()
+    const {productId} = useParams();
+
 
     useEffect( () => {
         getProductsById(productId)
@@ -19,7 +20,7 @@ const ItemDetailContainer = () => {
     }, [productId]);
   return (
     <div className="itemDetailContainer">
-        <ItemDetail {...product}/>
+        <ItemDetail {...product} productId={productId} />
     </div>
   )
 }
